@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Netflix Clone</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+  
+  <audio autoplay loop id="myAudio">
+    <source src="aud/beef-trailer.mp3" type="audio/mpeg">
+    <a href="aud/beef-trailer.mp3"></a>
+
+  </audio>
+
+  <section class="container" style="height: 890px">
+      <div class="content1">
+        <div class="video-container">
+          <video autoplay muted loop id="myVideo">
+            <source src="vid/beef-trailer.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="content2" >
+        <div class="image-container">
+            <img id="beeflogo" src="img/beef-logo.png">
+            <p style="color: white; margin-right: 110px;">Two strangers get into a road rage incident that brings chaos into their lives.</p>
+        </div>
+      </div>
+      <div class="content2">
+        <div class="image-container">
+        
+        </div>
+      </div>
+  </section>
+
+  <header class="container-fluid tab-pane fade show active" id="header">
+    <div class="row">
+      <nav class="col-md-8 col-sm-12 p-3 px-5 navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img  src="img/netflix-logo2.png">
+          </a>
+          
+          <div class="collapse navbar-collapse" id="navbartop">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">New & Popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">My List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Browse by Languages</a>
+              </li>
+              </ul>
+            </div>
+        </div>
+        </nav>
+        <nav class="btn-group col-md-4" id="navbarright" style="left:400px; display: flex;">
+          <div class="content" style="left:20; top:19px" >
+            <button id="button1" class="dropdown-toggle rounded-0" type="button" data-bs-toggle="dropdown">
+              <img class="rounded-2" src="img/profile-icon.png">
+            </button>
+            <ol class="dropdown-menu" style="background-color:rgb(010,010,010);">
+              <li class="column">
+                <img class="rounded-2" src="img/profile-icon.png">
+                <a class="dropdown-item" href="#" style="font-size: 12px; color: white;">Parasite1</a>
+              </li>
+              <li class="column">
+                <img class="rounded-2" src="img/profile-icon.png">
+                <a class="dropdown-item" href="#" style="font-size: 12px; color: white;">Parasite2</a>
+              </li>
+              <li class="column">
+                <img class="rounded-2" src="img/profile-icon.png">
+                <a class="dropdown-item" href="#" style="font-size: 12px; color: white;">Parasite3</a>
+              </li>
+              <li class="column">
+                <img class="rounded-2" src="img/profile-icon.png">
+                <a class="dropdown-item" href="#" style="font-size: 12px; color: white;">Others</a>
+              </li>
+              <li class="column">
+                <img class="rounded-2" src="img/profile-icon.png">
+                <a class="dropdown-item" href="#" style="font-size: 12px; color: white;">Manage Profiles</a>
+              </li>
+              <li class="column">
+                <img class="rounded-2" src="img/profile-icon.png">
+                <a class="dropdown-item" href="#" style="font-size: 12px; color: white;">Transfer Profiles</a>
+              </li>
+              <li class="column">
+                <img class="rounded-2" src="img/profile-icon.png">
+                <a class="dropdown-item" href="#" style="font-size: 12px; color: white;">Account</a>
+              </li>
+              <li class="column">
+                <img class="rounded-2" src="img/profile-icon.png">
+                <a class="dropdown-item" href="#" style="font-size: 12px; color: white;">Help Center</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider  border-bottom">
+              </li>
+              <li class="column">
+                <img class="rounded-2" src="img/profile-icon.png">
+                <a class="dropdown-item" href="#" style="font-size: 12px;color: white;">Sign out of Netflix</a>
+              </li>
+            </ol>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+    
+  <div class="container-fluid" id="container-carousel">
+
+    <div>
+      <div class="content3" >
+        <div class="">
+            <p style="color: white; margin-bottom:180px; margin-left: 30px;">
+              Recently Added</p>
+        </div>
+      </div>
+    <nav>
+      <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+        <div class="">
+          <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/thumbnail1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/thumbnail2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/thumbnail1.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </nav>
+
+    <nav>
+      <div class="content3" >
+        <div class="">
+            <p style="color: white; margin-bottom:180px; margin-left: 30px;">Continue Watching</p>
+        </div>
+      </div>  
+      <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel"> 
+        <div class="">
+          <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+   
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/thumbnail4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/thumbnail3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/thumbnail4.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </nav>
+    </div>
+  </div>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" 
+  integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+/*HEADER STYLING*/
+
+#header {
+    position: fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background: rgb(010,010,010);
+    margin-left: 0;
+    color: rgb(255, 255, 255);
+  }
+
+  .column{
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+#navbarright {
+    background: rgb(010,010,010);
+    color: rgb(255, 255, 255);
+    
+}
+
+
+/* VIDEO BACKGROUND */
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    display: flex;
+    position: fixed;
+    color: #f1f1f1;
+    width: 100%;
+
+  }
+
+  .content1{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    top: 250px;
+    left: 80px;
+  }
+
+  .video-container{
+    width: 100%;
+    display: flex;
+  }
+  
+  /* BUTTONS */
+
+  #button1 {
+    opacity: 60;
+    background-color: rgb(010,010,010);
+    margin: 0;
+    border: 0;
+    
+  }
+
+  .dropdown-menu{
+    opacity: 65%;
+  }
+
+  .dropdown-item:hover{
+    display: none;
+  }
+
+
+
+/* IMAGE */
+
+.content2{
+    position: absolute;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    top: 200px;
+    left: 55px;
+}
+
+.image-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* CAROUSEL */
+
+
+.content3{
+  position: absolute;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    left: 55px;
+}
