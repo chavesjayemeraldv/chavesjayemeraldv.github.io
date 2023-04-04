@@ -23,7 +23,6 @@
     
 }
 
-
 /* VIDEO BACKGROUND */
 
 #myVideo {
@@ -43,6 +42,7 @@
 
   }
 
+
   .content1{
     position: fixed;
     width: 100%;
@@ -52,6 +52,7 @@
     top: 250px;
     left: 80px;
   }
+  
 
   .video-container{
     width: 100%;
@@ -107,4 +108,54 @@
     flex-wrap: wrap;
     flex: 1;
     left: 55px;
+}
+
+/* BREAKPOINTS */
+
+@media (max-width: 413px) {
+  
+  #navbarmiddle{
+    display: none;
+  }
+
+  #search{
+    display: none;
+  }
+  
+}
+
+@media  (min-width: 414px) and (max-width: 768px) {
+
+  #navbarmiddle{
+    display: none;
+  }
+
+  #search{
+    display: none;
+  }
+  
+}
+
+@media  (min-width: 769px) and (max-width: 1199px) {
+  .content{
+    display: flex;
+    left: 770px;
+  }
+  #navbarmiddle{
+    display: none;
+  }
+
+  #search{
+    display: none;
+  }
+
+  
+}
+
+@media  (min-width: 1200px) and (max-width: 1440px) {
+  .content4{
+    display: flex;
+  }
+
+  
 }
